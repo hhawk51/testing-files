@@ -1,0 +1,10 @@
+<!-- RFI SUCCESS INDICATOR -->
+<p style="background-color: yellow; padding: 10px;">RFI Test Successful: File Included</p>
+
+<!-- BENIGN XSS TEST (SHOULD NOT EXECUTE IF CONTENT SECURITY POLICY (CSP) IS PROPERLY CONFIGURED OR IF XSS VULNERABILITY IS NOT PRESENT) -->
+<script>alert('XSS Test: If you see this, it may indicate a vulnerability.');</script>
+
+<!-- ADDITIONAL DEBUGGING INFORMATION (IF DISPLAYED, INDICATES FILE INCLUSION) -->
+<p>Query String: <script>document.write(window.location.search);</script></p>
+<p>Referrer: <script>document.write(document.referrer);</script></p>
+		
